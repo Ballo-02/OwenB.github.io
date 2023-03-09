@@ -1,8 +1,7 @@
 <?php
 if (isset($_POST['Email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "owen.edrward.ball@gmail.com";
+    $email_to = "owen.edward.ball@gmail.com";
     $email_subject = "Website Request";
 
     function problem($error)
