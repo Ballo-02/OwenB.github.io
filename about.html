@@ -57,6 +57,7 @@
 		.main-image img{
 		  width: 100%;
 		  height: 100%;
+		  position: relative;
 		}
 		
 		.project-title h1{
@@ -69,41 +70,33 @@
 			left: 46%;
 			right: 0;
 		}
-		.place-card-container{
-		  height: 450px; 
+		.place-card-container{ 
+		  height: 600px;
 		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		  width: 65%;
-		  margin: auto;
-		  position: relative;
+		  margin: 80px;
+		  overflow:hidden;
 		  top: 35%;
-		  left: 0;
+		  left: 50%;
 		  right: 0;
 		}
 		.place-card-text {
-		  width: 73%;
-		  height: 0;
-		  position: relative;
-		    top: 10%;
-		    left: 0;
-		    right: 0;
-		}
-		.place-card-text1 {
-		  width: 100%;
+		  width: 60%;
+		  height: 300%;
+		  overflow: inherit;
 		  position: relative;
 		    top: 0;
 		    left: 5%;
 		    right: 0;
 		}
-		.place-card-text1 h1{
+		.place-card-text h1{
 		  color: black;
 		  font-weight: normal;
 		  font-family: Poppins;
-		  font-size: 1.5em;
-		  display: inline-block;
+		  font-size: 1.3vw;
 		}
 		.comma img{
-		  width: 75px;
-		  height: 75px;
+		  width: 10pw;
+		  height: 10pw;
 		  position: relative;
 			top: 0;
 			left: 1%;
@@ -114,22 +107,18 @@
 		  color: black;
 		  font-weight: bold;
 		  font-size: 2em;
-		  position: relative;
+		  position: absolute;
 			top: 10%;
 			left: 1%;
 			right: 0;
 		}
 		.portrait{
-		  width: 40%;
-		  height: 60%;
-		  position: relative;
-			top: 0;
-			left: 110%;
-			right: 0;
+		  position: absolute;
+		  margin-left: 65%;
 		}
 		.portrait img {
-		  width: 300px;
-		  height: 300px;
+		  width: 150pw;
+		  height: 150%;
 		}
 		
 	</style>
@@ -149,19 +138,17 @@
 		<h1>About Me</h1>
     </div>
 	<div class="place-card-container">
-		<div class="place-card-text">
-			<div class="comma">
-				<img src="images/coma.png" alt="comma- about me">
-			</div>
-			<div class="portrait">
-				<img src="images/portrait_square.png" alt="Image of Owen Ball">
-			</div>
-			<div class="place-card-text1">
-				<h1>I am an enthusiastic graduate, with a 1st Class Honours degree in Ethical Hacking and Cyber Security at Coventry Univeristy. I actively participate in cyber security events such as the CTF events, hacking groups/talks from guest speakers (sometimes through the Computer Security Society) to practise and understand more about hacking. Taking a placement year to penetration test Hypercars and Supercars has given me a vast knowledge in the cyber security automotive world. I am particularly proud of my hacking into IoT project where me and my team won a prize by following the penetration process of researching the infrastructure of the whiteboard devices in classrooms and gaining full root/administrator access. I am hardworking, honest, dependable, and self-motivated, clearly demonstrated by my project completion successes.</h1>
-			</div>
-			<span class="author">
-				<a>Owen Ball</a>
-			</span>
+		<div class="comma">
+			<img src="images/coma.png" alt="comma- about me">
 		</div>
+		<div class="portrait">
+			<img src="images/portrait_square.png" alt="Image of Owen Ball">
+		</div>
+		<div class="place-card-text">
+			<h1>I am an enthusiastic graduate, with a 1st Class Honours degree in Ethical Hacking and Cyber Security at Coventry Univeristy. I actively participate in cyber security events such as the CTF events, hacking groups/talks from guest speakers (sometimes through the Computer Security Society) to practise and understand more about hacking. Taking a placement year to penetration test Hypercars and Supercars has given me a vast knowledge in the cyber security automotive world. I am particularly proud of my hacking into IoT project where me and my team won a prize by following the penetration process of researching the infrastructure of the whiteboard devices in classrooms and gaining full root/administrator access. I am hardworking, honest, dependable, and self-motivated, clearly demonstrated by my project completion successes.</h1>
+		</div>
+		<span class="author">
+			<a>Owen Ball</a>
+		</span>
 	</div>
 </body>
