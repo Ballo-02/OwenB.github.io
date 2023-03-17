@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="contact-form.css" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Owen B profile</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Poppins;
+		}
+
+		nav {
+			background-color: black;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 60px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			transition: all 0.2s ease-in-out;
+		}
+
+		nav a:hover {
+			transform: scale(1.1);
+		}
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+
+		nav li {
+			margin-right: 1rem;
+		}
+
+		.about {
+			height: 800px;
+			background-color: lightgray;
+		}
+
+		.contact {
+			height: 800px;
+			background-color: darkgray;
+		}
+		.main-image img{
+		  width: 100%;
+		  height: 100%;
+		  position: relative;
+		}
+		.blog-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 40px;
+		  position: relative;
+			top: 50%;
+			left: 46%;
+			right: 0;
+		}
+		.place-card-container{ 
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		    top: 52%;
+		    margin-top: 100px;
+		}
+		.project1-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project1{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project1-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project1-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text1 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text1 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.DABFM{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.DABFM img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project2-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 2200px;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project2{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project2-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project2-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text2 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text2 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.VIA{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.VIA img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project2-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project3{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project3-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project3-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text3 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text3 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.GPS{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.GPS img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project4-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project4{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project4-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project4-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text4 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text4 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.Socket{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.Socket img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project5-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project5{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project5-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project5-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text5 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text5 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.Rainbow{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.Rainbow img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project6-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project6{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project6-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project6-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text6 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text6 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.Cisco{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.Cisco img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project7-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project7{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project7-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project7-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text7 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text7 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.WebSite{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.WebSite img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project8-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project8{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project8-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project8-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text8 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text8 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.Car{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.Car img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project9-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project9{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project9-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project9-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text9 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text9 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.PrivEsc{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.PrivEsc img {
+		  width: 950px;
+		  height: 600px;
+		}
+		.project10-box{ 
+		  height: 1100px;
+		  width: 1050px;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  overflow:hidden;
+		  position: relative;
+		    top: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.project10{ 
+		  height: 1100px;
+		  width: 1600px;
+		  position: relative;
+		    margin: 2px;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.project10-title{
+		  height: 100px;
+		  width: 1000px;
+		  position: absolute;
+			top: 670px;
+			left: 50px;
+			right: 0;
+		}
+		.project10-title a{
+		  font-family: Poppins;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 30px;
+		}
+		.place-card-text10 {
+		  width: 1000px;
+		  height: 300px;;
+		  position: absolute;
+		    top: 730px;
+		    left: 50px;
+		    right: 0;
+		}
+		.place-card-text10 a{
+		  color: black;
+		  font-weight: normal;
+		  font-family: Poppins;
+		  font-size: 0.8vw;
+		}
+		.Survival{
+		  position: absolute;
+		  margin: 53px;
+		}
+		.Survival img {
+		  width: 950px;
+		  height: 600px;
+		}
+
+		
+	</style>
+	
+</head>
+<body>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="index.html">Projects</a>
+		<a href="blog.html">Blog</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	<div class="main-image">
+		<img src="images/long.png" alt="Collection of Images related to the author">
+	</div>
+	<div class="blog-title">
+		<a>My Blog</a>
+			<div class="place-card-container">
+
+				<div class="project1-box">
+					<div class="VIA">
+						<img src="images/VIA.jpg" alt="VIA Kramer">
+					</div>
+					<div class="project1-title">
+						<a>Full RCE VIA Kramer (IoT Devices) box</a>
+					</div>
+					<div class="place-card-text1">
+						<a>A project intended for the Coventry University Talent Showcase event where we hacked into IoT (Internet of Things) e.g. the whiteboard. We managed to get full RCE without admintstrator priveladge for the kramer Go (debain) and the same for the windows version but pre-exisitng user needed with password. I also added an additional script to change the background photo and room information such as code and name.</a>
+					</div>
+
+				<div class="project2-box">
+					<div class="project2">
+						<div class="DABFM">
+							<img src="images/DABFM.png" alt="Broadcast Dish">
+						</div>
+						<div class="project2-title">
+							<a>DAB/FM Broadcaster via HackRF One</a>
+						</div>
+						<div class="place-card-text1">
+							<a>project text</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="project3-box">
+					<div class="GPS">
+						<img src="images/gps.jpg" alt="GPS">
+					</div>
+					<div class="project3-title">
+						<a>Simulating GPS co-ordinates on a Aston martin infotainment System</a>
+					</div>
+					<div class="place-card-text3">
+						<a>Simulating GPS co-ordinates on a Aston martin infotainment System using a HackRF One with modofied compents such as attenuators and TXCO PCB's</a>
+					</div>
+				</div>
+
+				<div class="project4-box">
+					<div class="Sockets">
+						<img src="images/socket.png" alt="Controller &amp; Client Scripts">
+					</div>
+					<div class="project4-title">
+						<a>Controller &amp; Client Scripts</a>
+					</div>
+					<div class="place-card-text4">
+						<a>A project intended for my 2nd year Ethical Hacking and Cyber Security degree which involves a client (can be multiple scripts each on different machines) and a controller that will control these client scripts. You can send live commands to each client, relay a command (send a command from one client to the next), send python commands and send general useful commands used for enumerating a machine. This can all be selected from the GUI (Graphical User Interface) menu when the script is run.</a>
+					</div>
+				</div>
+
+				<div class="project5-box">
+					<div class="Raindbow">
+						<img src="images/rainbow.jpg" alt="Rainbow Table">
+					</div>
+					<div class="project5-title">
+						<a>Rainbow Table</a>
+					</div>
+					<div class="place-card-text5">
+						<a>The chosen hash function can create hashes of arbitrary length. Here, we&#x27;re using just two bytes to limit the size of tables required, but the same methods would apply for larger hashes. You just need more time and space.</a>
+					</div>
+				</div>
+
+				<div class="project6-box">
+					<div class="Cisco">
+						<img src="images/cisco.jpg" alt="Designed an advanced CISCO Network">
+					</div>
+					<div class="project6-title">
+						<a>Designed an advanced CISCO Network</a>
+					</div>
+					<div class="place-card-text6">
+						<a>Designed an advanced CISCO Network</a>
+					</div>
+				</div>
+
+				<div class="project7-box">
+					<div class="WebSite">
+						<img src="images/website.jpg" alt="Secure website and database">
+					</div>
+					<div class="project7-title">
+						<a>Secure website and database</a>
+					</div>
+					<div class="place-card-text5">
+						<a>For one of my modules at Coventry University (Ethical Hacking and Cyber Security) I had to learn PHP, SQL, JavaScript, Html, CSS to create a website of my choose with a secure backend. I added a secure login with PHP session management that logged password securely in a database and had a leaderboard that interacted with the website score sheet. This also included different levels of access such as administrator.</a>
+					</div>
+				</div>
+
+				<div class="project8-box">
+					<div class="Car">
+						<img src="images/car_hacking.jpg" alt="Automotive Hacking presentation + Simulator">
+					</div>
+					<div class="project8-title">
+						<a>Automotive Hacking presentation + Simulator</a>
+					</div>
+					<div class="place-card-text5">
+						<a>Research into Automotive Hacking for the ComSec (Computer Science) society with a PowerPoint presentation and simulator to show these attacks in action. This includes but not limited to capturing CAN (Controller Area Network) packets and relaying them to a car. This can be done by finding the ID for reving a cars engine by monitoring the cars packets via wireshark or specified scripts and seeing the rev counter increase then capturing this output. The captured output(rev packets) are then re-sent showing the car to rev, turn, signal ect.</a>
+					</div>
+				</div>
+
+				<div class="project9-box">
+					<div class="PrivEsc">
+						<img src="images/privesc.jpg" alt="Privilege Escalation and Enumeration Script">
+					</div>
+					<div class="project9-title">
+						<a>Privilege Escalation and Enumeration Script</a>
+					</div>
+					<div class="place-card-text9">
+						<a>LEAP: Local Enumeration And Privesc. As a first-year project, I created a script using my knowledge of Python 3 and Linux, that when chosen could enumerate different operating systems and give a specific output depending on what was selected. This then chose which possible privilege escalation methods were available to use and adopt the appropriate function that would execute them.</a>
+					</div>
+				</div>
+
+				<div class="project10-box">
+					<div class="VIA">
+						<img src="images/survival.png" alt="3D survival game (A Level Dissertation)">
+					</div>
+					<div class="project10-title">
+						<a>3D survival game (A Level Dissertation)</a>
+					</div>
+					<div class="place-card-text10">
+						<a>A project intended for my computer science A Level course where I self-taught myself C# and Unity. I attained a A* in this project and documented this in the word and pdf document above. Below shows a brief description of what I wanted to achieve and the reason why there was a gap in this part of the game market.</a>
+					</div>
+				</div>
+			</div>
+	</div>
+</body>
