@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 20px;
+    height: 5%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 7px;
+    font-size: 3vw;
     transition: all 0.2s ease-in-out;
 }
 
@@ -59,42 +59,43 @@ nav li {
     font-family: Poppins;
     color: black;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 10vw;
     position: relative;
-    top: 25px;
-    left: 33px;
+    top: 5%;
+    left: 25%;
     right: 0;
 }
 .place-card-container{ 
-    height: 210px;
-    width: 370px;
+    height: 800px;
+    width: 85%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
     overflow:hidden;
-    top: 40%;
-    left: 50%;
-    right: 0;
+    position: absolute;
+      top: 180px;
+      left: 5%;
+      right: 0;
 }
 .place-card-text {
     width: 80%;
     height: 100%;
     overflow: inherit;
     position: relative;
-    top: 90px;
-    left: 10%;
-    right: 0;
+      top: 240px;
+      left: 10%;
+      right: 0;
 }
 .place-card-text h1{
     color: black;
     font-weight: normal;
     font-family: Poppins;
-    font-size: 1.0vw;
+    font-size: 4.0vw;
 }
 .comma img{
-    width: 8px;
-    height: 8px;
+    width: 13px;
+    height: 13px;
     position: relative;
-    top: 93px;
+    top: 250px;
     left: 5%;
     right: 0;
 }
@@ -108,16 +109,16 @@ nav li {
 }
 .author a{
     position: absolute;
-    top: 86px;
+    top: 686px;
     left: 6%;
     right: 0;
 }
 .portrait{
     position: absolute;
-      top: 90px;
-      margin-left: 11px;
+      top: 19px;
+      margin-left: 17%;
 }
 .portrait img {
-    width: 70px;
-    height: 70px;
+    width: 75%;
+    height: 75%;
 }
