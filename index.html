@@ -1,271 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Owen B profile</title>
-	<style>
-		body {
-			
-			padding: 0;
-			font-family: Poppins;
-		}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Owen Ball Site</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets-index/css/index.css" />
+		<noscript><link rel="stylesheet" href="assets-index/css/noscript.css" /></noscript>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="research_blog.html">Research Blog</a></li>
+						<li><a href="profile.html">About Me</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 
-		nav {
-			background-color: black;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			height: 60px;
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
-		}
-
-		nav a {
-			color: white;
-			text-decoration: none;
-			font-weight: bold;
-			font-size: 18px;
-			transition: all 0.2s ease-in-out;
-		}
-
-		nav a:hover {
-			transform: scale(1.1);
-		}
-		nav ul {
-			list-style: none;
-			display: flex;
-		}
-
-		nav li {
-			margin-right: 1rem;
-		}
-
-		.about {
-			height: 800px;
-			background-color: lightgray;
-		}
-
-		.contact {
-			height: 800px;
-			background-color: darkgray;
-		}
-		.main-image img{
-		  width: 100%;
-		  height: 100%;
-		  position: relative;
-		}
-		
-		.project-title{
-		  font-family: inherit;
-		  color: black;
-		  position: absolute;
-			top: 300px;
-			left: 10%;
-			right: 0;
-			margin-top: 8%;
-		}
-		.place-card-container {
-			width: 100%;
-		    height: 100%;
-			position: absolute;
-			  top: 10%;
-			  margin-top: 100px;
-		}
-		.place-card-container1 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 400px;
-			left: 10%;
-			right: 0;
-		}
-		.place-card-container2 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 400px;
-			left: 40%;
-			right: 0;
-		}
-		.place-card-container3 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 400px;
-			left: 70%;
-			right: 0;
-		}
-		.place-card-container4 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 950px;
-			left: 10%;
-			right: 0;
-		}
-		.place-card-container5 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 950px;
-			left: 40%;
-			right: 0;
-		}
-		.place-card-container6 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 950px;
-			left: 70%;
-			right: 0;
-		}
-		.place-card-container7 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 1550px;
-			left: 10%;
-			right: 0;
-		}
-		.place-card-container8 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top:1550px;
-			left: 40%;
-			right: 0;
-		}
-		.place-card-container9 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 1550px;
-			left: 70%;
-			right: 0;
-		}
-		.place-card-container10 {
-		  width: 300px;
-		  height: 1000px;
-		  position: absolute;
-			top: 2150px;
-			left: 10%;
-			right: 0;
-		}
-		.place-card-image {
-		  width: 300px;
-		  height: 280px;
-		  position: absolute;
-			top: 10px;
-			left:0;
-			right: 0;
-		}
-		.place-card-text{
-		  font-weight: bold;
-		  color: black;
-		  font-size: 25px;
-		  width: 300px;
-		  height: 300px;
-		  position: absolute;
-			top: 300px;
-			left:0;
-			right: 0;
-		  
-		}
-		.place-card-text1{
-		  color: black;
-		  font-size: 15px;
-		  width: 300px;
-		  height: 300px;
-		  position: absolute;
-			top: 360px;
-			left: 0;
-			right: 0;
-		}
-		
-	</style>
-	
-</head>
-<body>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="index.html">Projects</a>
-		<a href="contact.html">Contact</a>
-	</nav>
-	<div class="main-image">
-		<img src="images/long.png" alt="Collection of Images related to the author">
-	</div>
-		<div class="project-title">
-		<h1 style="font-weight: bold ">Projects</h1>
-		<a> Both Univeristy work and Personal </a>
-		</div>
-	<div class="place-card-container">
-		<div class="place-card-container1">
-		  <img alt="Full RCE VIA Kramer (IoT Devices) box" src="images/VIA_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/Via-Kramer-Whiteboard-"  rel="Full RCE VIA Kramer (IoT Devcies) box"><span class=" place-card-text">Full RCE VIA Kramer (IoT Devcies) box</span> </a>
-			<span class="place-card-text1">A project intended for the Coventry University Talent Showcase event where we hacked into IoT (Internet of Things) e.g. the whiteboard. We managed to get full RCE without admintstrator priveladge for the kramer Go (debain) and the same for the windows version but pre-exisitng user needed with password. I also added an additional script to change the background photo and room information such as code and name.</span>
-		</div>
-		
-		<div class="place-card-container2">
-		  <img alt="DAB/FM Broadcaster via HackRF One" src="images/DABFM_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/DAB-FM-HackRF-Transmit"  rel="DAB/FM Broadcaster via HackRF One"><span class=" place-card-text">DAB/FM Broadcaster via HackRF One</span> </a>
-			<span class="place-card-text1">This project transmits 2 FM signals and 2 DAB signals (clearly) on a chosen frequency/ensemble, station name and any extra details that can be added, using HackRF One devices. It runs on 1 python3 script with 4 HackRF&#x27;s plugged in at once running on Linux (Ubuntu used). You can choose if you want what you want running e.g doesn&#x27;t have to be all 4.</span>
-		</div>
-		
-		<div class="place-card-container3">
-		  <img alt="Simulating GPS co-ordinates on a Aston martin infotainment System" src="images/GPS_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/GPS_Spoofing"  rel="GPS_spoofing"><span class=" place-card-text">Spoofing GPS</span> </a>
-			<span class="place-card-text1">Simulating GPS co-ordinates on a Aston martin infotainment System using a HackRF One with modofied compents such as attenuators and TXCO PCB's</span>
-		</div>
-		
-		<div class="place-card-container4">
-		  <img alt="Controller &amp; Client Scripts" src="images/socket_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/sockets"  rel="Controller &amp; Client Scripts"><span class=" place-card-text">Controller &amp; Client Scripts</span> </a>
-			<span class="place-card-text1">A project intended for my 2nd year Ethical Hacking and Cyber Security degree which involves a client (can be multiple scripts each on different machines) and a controller that will control these client scripts. You can send live commands to each client, relay a command (send a command from one client to the next), send python commands and send general useful commands used for enumerating a machine. This can all be selected from the GUI (Graphical User Interface) menu when the script is run.</span>
-		</div>
-		
-		<div class="place-card-container5">
-		  <img alt="Rainbow Table Generator" src="images/rainbow_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/Rainbow_table"  rel="Rainbow Table Generator"><span class=" place-card-text">Rainbow Table Generator</span> </a>
-			<span class="place-card-text1">The chosen hash function can create hashes of arbitrary length. Here, we&#x27;re using just two bytes to limit the size of tables required, but the same methods would apply for larger hashes. You just need more time and space.</span>
-		</div>
-		
-		<div class="place-card-container6">
-		  <img alt="Designed an advanced CISCO Networkm" src="images/cisco_square.png" class="place-card-image"/>
-			<a href="  rel="Designed an advanced CISCO Network"><span class=" place-card-text">Designed an advanced CISCO Network</span> </a>
-			<span class="place-card-text1">Designed an advanced CISCO Network</span>
-		</div>
-		
-		<div class="place-card-container7">
-		  <img alt="Secure website and database" src="images/website_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/website-with-a-secure-database-"  rel="Secure website and database"><span class=" place-card-text">Implemented a website with a secure database</span> </a>
-			<span class="place-card-text1">For one of my modules at Coventry University (Ethical Hacking and Cyber Security) I had to learn PHP, SQL, JavaScript, Html, CSS to create a website of my choose with a secure backend. I added a secure login with PHP session management that logged password securely in a database and had a leaderboard that interacted with the website score sheet. This also included different levels of access such as administrator.</span>
-		</div>
-		
-		<div class="place-card-container8">
-		  <img alt="Automotive Hacking presentation + Simulator" src="images/automotive_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/Automotive-Hacking-ComSec"  rel="Automotive Hacking"><span class=" place-card-text">Automotive Hacking presentation + Simulator</span> </a>
-			<span class="place-card-text1">Research into Automotive Hacking for the ComSec (Computer Science) society with a PowerPoint presentation and simulator to show these attacks in action. This includes but not limited to capturing CAN (Controller Area Network) packets and relaying them to a car. This can be done by finding the ID for reving a cars engine by monitoring the cars packets via wireshark or specified scripts and seeing the rev counter increase then capturing this output. The captured output(rev packets) are then re-sent showing the car to rev, turn, signal ect.</span>
-		</div>
-		
-		<div class="place-card-container9">
-		  <img alt="Privilege Escalation and Enumeration Script" src="images/PrivEsc_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/Privilege-Escalation-and-Enumeration-Script-LEAP-"  rel="Privilege Escalation Photo"><span class=" place-card-text">Privilege Escalation and Enumeration Script </span> </a>
-			<span class="place-card-text1">LEAP: Local Enumeration And Privesc. As a first-year project, I created a script using my knowledge of Python 3 and Linux, that when chosen could enumerate different operating systems and give a specific output depending on what was selected. This then chose which possible privilege escalation methods were available to use and adopt the appropriate function that would execute them.</span>
 		</div>
 
-		<div class="place-card-container10">
-		  <img alt="3D survival game (A Level Dissertation)" src="images/survival_square.png" class="place-card-image"/>
-			<a href="https://github.com/Ballo-02/3D-survival-game-A-level-dissertation-"  rel="3D survival game (A Level Dissertation)"><span class=" place-card-text">3D survival game (A Level Dissertation)</span> </a>
-			<span class="place-card-text1">A project intended for my computer science A Level course where I self-taught myself C# and Unity. I attained a A* in this project and documented this in the word and pdf document above. Below shows a brief description of what I wanted to achieve and the reason why there was a gap in this part of the game market.</span>
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<p>
+							<br><br><br>
+						</p>
+
+					</header>
+				</section>
+				<!-- Banner -->
+				<section id="banner2">
+					<header>
+						<h2>Welcome to my Website -<strong>Owen Ball</strong>.</h2>
+						<p>
+							Feel free to check out my blog, projects or read more about me. <br>
+							If you have any questions or want to reach out goto my contact page <a href="contact.html">Contact Page</a> .
+						</p>
+					</header>
+				</section>
+
+			<!-- Carousel -->
+				<section class="carousel">
+					<div class="reel">
+
+						<article>
+							<a href="https://github.com/Ballo-02/Via-Kramer-Whiteboard-" class="image featured"><img src="images/VIA_square.png" alt="Full RCE VIA Kramer (IoT Devcies) box" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/Via-Kramer-Whiteboard-">Full RCE VIA Kramer (IoT Devcies) box</a></h3>
+							</header>
+							<p>Achieved full RCE without admin privileges for the Kramer Go (Debian) and Windows versions of the IoT devices(whiteboard), at Coventry University Talent Showcase</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/DAB-FM-HackRF-Transmit" class="image featured"><img src="images/DABFM_square.png" alt="DAB/FM Broadcaster via HackRF One" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/DAB-FM-HackRF-Transmit">DAB/FM Broadcaster via HackRF One</a></h3>
+							</header>
+							<p>A Linux-based Python3 script transmits 2 FM and 2 DAB signals using 4 HackRF One devices. Users can select frequency, station name, and details. It can run with fewer than 4 devices.</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/GPS_Spoofing" class="image featured"><img src="images/GPS_square.png" alt="Simulating GPS co-ordinates on a Aston martin infotainment System" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/GPS_Spoofing">Simulating GPS co-ordinates on a Aston martin infotainment System</a></h3>
+							</header>
+							<p>Simulating GPS co-ordinates on a Aston martin infotainment System using a HackRF One with modofied compents such as attenuators and TXCO PCB's</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/sockets" class="image featured"><img src="images/socket_square.png" alt="Controller &amp; Client Scripts" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/sockets">Controller &amp; Client Scripts</a></h3>
+							</header>
+							<p>degree project involves a controller to manage client scripts on multiple machines. The controller enables live, relay, Python and general enumeration commands through a GUI menu.<br><br></p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/Rainbow_table" class="image featured"><img src="images/rainbow_square.png" alt="Rainbow Table Generator" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/Rainbow_table">Rainbow Table Generator</a></h3>
+							</header>
+							<p>The chosen hash function can create hashes of arbitrary length. Here, we&#x27;re using just two bytes to limit the size of tables required, but the same methods would apply for larger hashes. You just need more time and space.</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/advanced-CISCO-System-" class="image featured"><img src="images/cisco_square.png" alt="Designed an advanced CISCO Network" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/advanced-CISCO-System-">Designed an advanced CISCO Network</a></h3>
+							</header>
+							<p>Designed an advanced CISCO Network where I attained my <a href="https://www.credly.com/badges/40e074a1-a264-4d89-b2c6-8dd19d1b0a15?source=linked_in_profile">'CCNA: Switching, Routing, and Wireless Essentials'</a> certification. I also attained the introduction cert </p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/website-with-a-secure-database-" class="image featured"><img src="images/website_square.png" alt="Secure website and database" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/website-with-a-secure-database-">Implemented a website with a secure database</a></h3>
+							</header>
+							<p>Self-taught PHP, SQL, JavaScript, Html, and CSS for a University module. Created a website with secure backend, login, leaderboard, and multiple access levels.</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/Automotive-Hacking-ComSec" class="image featured"><img src="images/automotive_square.png" alt="Automotive Hacking presentation + Simulator" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/Automotive-Hacking-ComSec">Automotive Hacking presentation + Simulator</a></h3>
+							</header>
+							<p>Researched and simulated Automotive Hacking for ComSec society. Demonstrated CAN packet capture and relay to control car functions such as revving, turning, and signaling.</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/Privilege-Escalation-and-Enumeration-Script-LEAP-" class="image featured"><img src="images/PrivEsc_square.png" alt="Privilege Escalation and Enumeration Script" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/Privilege-Escalation-and-Enumeration-Script-LEAP-">Privilege Escalation and Enumeration Script</a></h3>
+							</header>
+							<p>First-year project Local Enumeration And Privesc script used Python 3 and Linux to enumerate OS and determine privilege escalation methods.</p>
+						</article>
+
+						<article>
+							<a href="https://github.com/Ballo-02/3D-survival-game-A-level-dissertation-" class="image featured"><img src="images/survival_square.png" alt="3D survival game (A Level Dissertation)" /></a>
+							<header>
+								<h3><a href="https://github.com/Ballo-02/3D-survival-game-A-level-dissertation-">3D survival game (A Level Dissertation)</a></h3>
+							</header>
+							<p>Self-taught msyelf C# and Unity for computer science A Level project for a 3D survival game. Achieved A* grade and documented project in Word and PDF</p>
+						</article>
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div class="wrapper style2">
+
+					<article id="main" class="container special">
+						<!-- <a href="images/portrait.jpg" class="image featured"><img src="images/portrait.jpg" alt="Profile Picture of Owen Ball" /></a> -->
+						<header>
+							<h2><a href="about.html">A little about me</a></h2>
+							<p>
+								You can see more of my academic achievements on my about page 
+							</p>
+						</header>
+						<a>
+							As a Placement Student, I am passionate about Ethical Hacking and Cyber Security and currently pursuing a 1st Class Honours degree at Coventry University (on track to gain a high first). 
+							I stay up-to-date with cyber security events and exploits and recreate these scenarios in controlled environments, as demonstrated by my blog and projects. 
+							I have also participated in events such as my Hacking IoT project, where my team gained full RCE for two platforms and won a prize.
+							During my placement year, I had the opportunity to penetration test Hypercars and Supercars, which provided me with extensive knowledge of the cyber security automotive industry. 
+							My focus now lies in the area of connected vehicles.I am hardworking, honest, dependable, and self-motivated, as evidenced by my successful completion of various projects.</a>
+						</a>
+					</article>
+
+				</div>
+
+			<!-- Features -->
+				<div class="wrapper style1">
+
+					<section id="features" class="container special">
+						<header>
+							<h2>My Recent Blog Posts</h2>
+							<p>You can see more of my blogs on my <a href="blog.html">Blog Page</a> </p>
+						</header>
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<a href="blog1" class="image featured"><img src="images/blog1" alt="blog1" /></a>
+								<header>
+									<h3><a href="blog1">Blog 1</a></h3>
+								</header>
+								<p>
+									About blog 1
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="blog2" class="image featured"><img src="images/blog1" alt="blog2" /></a>
+								<header>
+									<h3><a href="blog2">Blog 2</a></h3>
+								</header>
+								<p>
+									About blog 2
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="blog3" class="image featured"><img src="images/blog1" alt="blog3" /></a>
+								<header>
+									<h3><a href="blog3">Blog 3</a></h3>
+								</header>
+								<p>
+									About blog 3
+								</p>
+							</article>
+						</div>
+					</section>
+
+				</div>
+					<div class="row">
+						<div class="col-12">
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+
+						</div>
+
+					</div>
+				</div>
+
 		</div>
-		
-		
-	</div>
-	 
-</body>
+
+		<!-- Scripts -->
+			<script src="assets-index/js/jquery.min.js"></script>
+			<script src="assets-index/js/jquery.dropotron.min.js"></script>
+			<script src="assets-index/js/jquery.scrolly.min.js"></script>
+			<script src="assets-index/js/jquery.scrollex.min.js"></script>
+			<script src="assets-index/js/browser.min.js"></script>
+			<script src="assets-index/js/breakpoints.min.js"></script>
+			<script src="assets-index/js/util.js"></script>
+			<script src="assets-index/js/main.js"></script>
+
+	</body>
 </html>
