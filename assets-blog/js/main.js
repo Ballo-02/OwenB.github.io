@@ -68,3 +68,13 @@
 				});
 
 })(jQuery);
+function toggleContent() {
+    var content = document.getElementById("hidden-content");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        document.getElementsByTagName("button")[0].innerHTML = "Show Less";
+    } else {
+        content.style.display = "none";
+        document.getElementsByTagName("button")[0].innerHTML = "Show More";
+    }
+}
